@@ -1,0 +1,38 @@
+---
+interface Props {
+    level: string
+}
+const { level } = Astro.props;
+const intLevel = parseInt(level)
+
+const getProgressColor = (level: number): string => {
+    if (intLevel < 30) return "#e37f6f";
+    if (intLevel < 80) return "#d2e36f";
+    return "#a1e36f";
+};
+---
+
+
+<div class="progress-bar">
+    <div class={`progress-fill`} style={`width: ${intLevel}%; background-color: #5794ba;`}></div>
+</div>
+<div class="level">{level}</div>
+
+<style>
+    .progress-bar {
+        width: 100%;
+        background-color: #e0e0e0;
+        /* border-radius: 4px; */
+        overflow: hidden;
+    }
+
+    .progress-fill {
+        height: 5px;
+        transition: "width 0.3s ease";
+    }
+
+    .level {
+        text-align: end;
+        font-size: .7rem;
+    }
+</style>

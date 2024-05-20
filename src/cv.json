@@ -1,0 +1,262 @@
+{
+    "basics": {
+        "name": "Luca Piccinini",
+        "label": "Software Developer",
+        "image": "/me2.png",
+        "email": "luca.piccinini0009@gmail.com",
+        "phone": "+54 2317-517453",
+        "url": "https://www.linkedin.com/in/lucapiccinini",
+        "summary": "Apasionado por la tecnología y el desarrollo de software, estoy terminando mi carrera en Ingeniería Electrónica. Como autodidacta, he adquirido y perfeccionado habilidades en diversas áreas del desarrollo de software, demostrando una capacidad constante para aprender y adaptarme a nuevas tecnologías. Mi formación en ingeniería me proporciona una sólida base en la resolución de problemas y el pensamiento lógico, lo cual aplico en cada proyecto en el que me involucro. Estoy motivado por la innovación y siempre busco contribuir a proyectos desafiantes y de impacto.",
+        "location": {
+            "address": "",
+            "postalCode": "1900",
+            "city": "La Plata",
+            "countryCode": "AR",
+            "region": "Buenos aires"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "LucaPicc",
+                "url": "https://github.com/LucaPicc"
+            },
+            {
+                "network": "Linkedin",
+                "username": "lucapiccinini",
+                "url": "https://www.linkedin.com/in/lucapiccinini"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Ripio",
+            "position": "SSr. Software Developer",
+            "url": "https://ripio.com",
+            "startDate": "2022-12-05",
+            "endDate": null,
+            "summary": "Me desempleño como desarrollador fullstack, aunque principalmente desempeño tareas de backend. Estoy trabajando con Django, Django Rest Framework, Node JS, express JS, Socket.io, Docker entre otras tecnologias para el desarrollo de microservicios.",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Comparaensa.com",
+            "position": "Software Developer",
+            "url": "https://www.comparaencasa.com/",
+            "startDate": "2021-12-05",
+            "endDate": "2022-12-05",
+            "summary": "En comparaencasa me desempeñe como desarrollador full stack, trabajando con Node JS, Django, Django Rest Framework, Next JS entre otras tecnologias. Lleve adelante el desarrollo de varios proyecto y colabore en el depliegue de ellos.",
+            "highlights": [
+                
+            ]
+        },
+        {
+            "name": "Smart Safety Argentina",
+            "position": "Software Developer",
+            "url": "https://smartsafety.com.ar/",
+            "startDate": "2021-04-01",
+            "endDate": "2021-12-05",
+            "summary": "Description…",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Integridad Informatica",
+            "position": "Software Developer",
+            "url": "https://ripio.com",
+            "startDate": "2020-08-01",
+            "endDate": "2020-03-01",
+            "summary": "Description…",
+            "highlights": [
+                "Started the company"
+            ]
+        },
+        {
+            "name": "Facultad de Ingenieria UNLP",
+            "position": "Ayudante Alumno",
+            "url": "https://ing.unlp.edu.ar/",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "summary": "Description…",
+            "highlights": [
+                "Started the company"
+            ]
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Organization",
+            "position": "Volunteer",
+            "url": "https://organization.com/",
+            "startDate": "2012-01-01",
+            "endDate": "2013-01-01",
+            "summary": "Description…",
+            "highlights": [
+                "Awarded 'Volunteer of the Month'"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Facultad de Ingenieria de la Universidad Nacional de La Plata",
+            "url": "https://ing.unlp.edu.ar/",
+            "area": "Ingenieria Electronica",
+            "studyType": "Bachelor",
+            "startDate": "2013-01-01",
+            "endDate": null,
+            "score": "6.5",
+            "courses": []
+        }
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Aprende React + Firebase",
+            "date": "2021-04-01",
+            "issuer": "Udemy",
+            "url": "https://www.udemy.com/certificate/UC-d4466584-71f4-4ac2-832c-1a837c5b6d41/"
+        },
+        {
+            "name": "Programacion orientada a objectos con Java",
+            "date": "2019-10-03",
+            "issuer": "Udemy",
+            "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "url": "https://publication.com",
+            "summary": "Description…"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Python",
+            "level": "100",
+            "keywords": ["Scripting", "Backend", "Microservices"]
+        },
+        {
+            "name": "Javascript",
+            "level": "75",
+            "keywords": ["Scripting", "Backend", "Frontend", "Web", "Microservices"]
+        },
+        {
+            "name": "Typescript",
+            "level": "50",
+            "keywords": ["Backend", "Frontend", "Web", "Microservices"]
+        },
+        {
+            "name": "HTML",
+            "level": "90",
+            "keywords": ["Frontend", "Web"]
+        },
+        {
+            "name": "CSS",
+            "level": "70",
+            "keywords": ["Frontend", "Web"]
+        },
+        {
+            "name": "Django",
+            "level": "95",
+            "keywords": ["Framework", "Backend", "Microservices"]
+        },
+        {
+            "name": "React",
+            "level": "80",
+            "keywords": ["Library", "Frontend", "Web"]
+        },
+        {
+            "name": "Socket.io",
+            "level": "50",
+            "keywords": ["Framework", "Backend", "Microservices"]
+        },
+        {
+            "name": "Docker",
+            "level": "60",
+            "keywords": ["Microservices", "Deploys"]
+        },
+        {
+            "name": "Next JS",
+            "level": "80",
+            "keywords": ["Framework", "Frontend"]
+        },
+        {
+            "name": "Node JS",
+            "level": "80",
+            "keywords": ["Framework", "Backend", "Microservices"]
+        },
+        {
+            "name": "Django Rest Framework",
+            "level": "90",
+            "keywords": ["Framework", "Backend", "Microservices"]
+        },
+        {
+            "name": "MySQL",
+            "level": "90",
+            "keywords": ["Databases", "SQL"]
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "90",
+            "keywords": ["Databases", "SQL"]
+        },
+        {
+            "name": "MongoDB",
+            "level": "70",
+            "keywords": ["Databases", "noSQL"]
+        },
+        {
+            "name": "Redis",
+            "level": "80",
+            "keywords": ["Databases", "noSQL"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Español",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": [
+                "Ferrets",
+                "Unicorns"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "Jane Doe",
+            "reference": "Reference…"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "description": "Description...",
+            "highlights": [
+                "Won award at AIHacks 2016"
+            ],
+            "url": "https://project.com/"
+        }
+    ]
+}

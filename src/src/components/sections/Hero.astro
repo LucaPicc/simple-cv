@@ -1,0 +1,76 @@
+---
+import { basics } from "@cv"
+import Section from "@/components/Section.astro"
+import CodeIcon from "@/icons/CodeIcon.astro"
+import Contact from "./Contact.astro"
+
+
+const {name, label, image, email, phone, summary, location, profiles} = basics
+
+---
+<Section>
+    <div class="container">
+        <figure>
+            <img src={image} alt={name}/>
+        </figure>     
+        <div class="info">
+            <h1>{name}</h1>
+            <Contact email={email} name={name} profiles={profiles} phone={phone}/>
+            <div class="label">
+                <CodeIcon width="1rem" height="1rem"/>
+                <h2>{label}</h2>
+            </div>
+            <p class="summary">{summary}</p>
+        </div>
+    </div>
+</Section>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 20px;
+    }
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 16px;
+        margin-bottom: 0;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        color: grey;
+        font-size: 0.9rem;
+        margin-top: .25rem;
+        display: flex;
+    }
+
+    .summary {
+        /* max-width: 450px; */
+        text-align: justify;
+    }
+
+    .label {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+</style>

@@ -1,0 +1,76 @@
+---
+import MailIcon from "@/icons/MailIcon.astro"
+import PhoneIcon from "@/icons/PhoneIcon.astro"
+import type {SocialIcon} from "@/types"
+import UserIcon from "@/icons/UserIcon.astro"
+import GithubIcon from "@/icons/GithubIcon.astro"
+import type {Profiles} from "@/cv";
+import LinkedinIcon from "@/icons/LinkedinIcon.astro"
+
+interface Props {
+    email: string
+    name: string
+    phone: string
+    profiles: Profiles[]
+}
+
+const {email, name, phone, profiles} = Astro.props
+
+
+const ProfilesIcons: SocialIcon = {
+    "Github": GithubIcon,
+    "Linkedin": LinkedinIcon
+}
+
+
+---
+
+<div class="contact">
+    <a
+    href={`mailto:${email}`}
+    title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    ><MailIcon width="1.3rem" height="1.3rem"/></a>
+    <a
+        href={`tel:${phone}`}
+        title={`Llamar a ${name} al ${phone}`}
+        target="_blank"
+        rel="noopener noreferrer"
+    ><PhoneIcon width="1.3rem" height="1.3rem"/></a>
+    {
+        profiles.map(({ network, url, username}) => {
+            const ProfileIcon = ProfilesIcons[network]
+            return (
+                <a 
+                    href={url}
+                    title={`visitar el perfil de ${name} en ${network}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                ><ProfileIcon width="1.3rem" height="1.3rem"/></a>
+            )
+        })
+    }
+</div>
+
+<style>
+    .contact {
+        display: flex;
+        flex-direction: row;
+        gap: 2px
+    }
+
+    .contact a {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .contact a:hover {
+        text-decoration: underline;
+        transition: ease-in .2s;
+        transform: scale(1.2);
+    }
+</style>
