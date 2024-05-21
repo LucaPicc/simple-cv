@@ -183,7 +183,7 @@
         },
         {
             "name": "Docker",
-            "level": "60",
+            "level": "70",
             "keywords": ["Microservices", "Deploys"]
         },
         {
@@ -220,7 +220,38 @@
             "name": "Redis",
             "level": "80",
             "keywords": ["Databases", "noSQL"]
+        },
+        {
+            "name": "Express JS",
+            "level": "50",
+            "keywords": ["Framework", "Backend", "Web"]
+        },
+        {
+            "name": "C",
+            "level": "40",
+            "keywords": ["Lenguaje"]
+        },
+        {
+            "name": "Assembly",
+            "level": "40",
+            "keywords": ["Lenguaje"]
+        },
+        {
+            "name": "VHDL",
+            "level": "40",
+            "keywords": ["Lenguaje"]
+        },
+        {
+            "name": "SQL",
+            "level": "60",
+            "keywords": ["Lenguaje"]
+        },
+        {
+            "name": "FastAPI",
+            "level": "60",
+            "keywords": ["Framework", "Backend"]
         }
+
     ],
     "languages": [
         {
