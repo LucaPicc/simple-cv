@@ -2,7 +2,7 @@
     "basics": {
         "name": "Luca Piccinini",
         "label": "Software Developer",
-        "image": "/me2.png",
+        "image": "/me2.webp",
         "email": "luca.piccinini0009@gmail.com",
         "phone": "+54 2317-517453",
         "url": "https://www.linkedin.com/in/lucapiccinini",
@@ -34,20 +34,23 @@
             "url": "https://ripio.com",
             "startDate": "2022-12-05",
             "endDate": null,
-            "summary": "Me desempleño como desarrollador fullstack, aunque principalmente desempeño tareas de backend. Estoy trabajando con Django, Django Rest Framework, Node JS, express JS, Socket.io, Docker entre otras tecnologias para el desarrollo de microservicios.",
+            "summary": "Me desempeño como desarrollador fullstack, aunque principalmente desempeño tareas de backend. Estoy trabajando con Django, Django Rest Framework, Node JS, express JS, Socket.io, Docker entre otras tecnologías para el desarrollo de micro servicios.",
             "highlights": [
-                "Started the company"
+                "Integración de servicios de terceros a los flujos de la empresa",
+                "Desarrollo de servicios de websocket para comunicación bidireccional con los clientes"
             ]
         },
         {
-            "name": "Comparaensa.com",
+            "name": "Comparaencasa.com",
             "position": "Software Developer",
             "url": "https://www.comparaencasa.com/",
             "startDate": "2021-12-05",
             "endDate": "2022-12-05",
-            "summary": "En comparaencasa me desempeñe como desarrollador full stack, trabajando con Node JS, Django, Django Rest Framework, Next JS entre otras tecnologias. Lleve adelante el desarrollo de varios proyecto y colabore en el depliegue de ellos.",
+            "summary": "En comparaencasa me desempeñe como desarrollador full stack, trabajando con Node JS, Django, Django Rest Framework, Next JS entre otras tecnologías. Lleve adelante el desarrollo de varios proyecto y colabore en el despliegue de ellos.",
             "highlights": [
-                
+                "Desarrollo y despliegue de servicio para la entrega y generación de paginas estáticas",
+                "Optimización de performance de sitio de la empresa.",
+                "Posicionamiento orgánico en buscadores con SEO y performance"
             ]
         },
         {
@@ -56,31 +59,36 @@
             "url": "https://smartsafety.com.ar/",
             "startDate": "2021-04-01",
             "endDate": "2021-12-05",
-            "summary": "Description…",
+            "summary": "En Smart Safety me desempeñe como desarrollador fullstack. Adquirí responsabilidades de manera progresivas teniendo personas a cargo para llevar los distintos desarrollos adelante. Las principales tecnologías con las que trabajábamos",
             "highlights": [
-                "Started the company"
+                "Digitalización de procesos industriales complejos",
+                "Desarrollo de gestor de archivos en la nube",
+                "Desarrollo de generador de informes y declaraciones juradas con informacion de los procesos y especificaciones de los clientes",
+                "Liderazgo de equipos"
             ]
         },
         {
-            "name": "Integridad Informatica",
+            "name": "Integridad Informática",
             "position": "Software Developer",
             "url": "https://ripio.com",
             "startDate": "2020-08-01",
             "endDate": "2020-03-01",
-            "summary": "Description…",
+            "summary": "En Integridad Informática me desempeñe principalmente como desarrollador fullstack. Fui el líder de uno de los proyectos de la empresa. Las principales tecnologías con las cuales trabajábamos eran JQuery, Javascript, Django y MySQL",
             "highlights": [
-                "Started the company"
+                "Desarrollador principal de proyecto de gestión de economía circular",
+                "Desarrolló de wallet basado en impacto ambiental de entidades participantes del sistema de economía circular"
             ]
         },
         {
-            "name": "Facultad de Ingenieria UNLP",
+            "name": "Facultad de Ingeniería UNLP",
             "position": "Ayudante Alumno",
             "url": "https://ing.unlp.edu.ar/",
             "startDate": "2019-01-01",
             "endDate": "2021-01-01",
-            "summary": "Description…",
+            "summary": "En la Facultad de Ingeniería me desempeñe como ayudante alumna de la materia de matemática para ingeniería, que es una materia introductoria a la carrera. En esta etapa dicte clases teóricos practicas, hice corrección de exámenes y trabajos prácticos.",
             "highlights": [
-                "Started the company"
+                "Dictado de clases",
+                "Corrección de exámenes"
             ]
         }
     ],
@@ -99,10 +107,10 @@
     ],
     "education": [
         {
-            "institution": "Facultad de Ingenieria de la Universidad Nacional de La Plata",
+            "institution": "Facultad de Ingeniería UNLP",
             "url": "https://ing.unlp.edu.ar/",
-            "area": "Ingenieria Electronica",
-            "studyType": "Bachelor",
+            "area": "Ingeniería Electronica",
+            "studyType": "Grado",
             "startDate": "2013-01-01",
             "endDate": null,
             "score": "6.5",
@@ -256,11 +264,11 @@
     "languages": [
         {
             "language": "Español",
-            "fluency": "Native speaker"
+            "fluency": "Nativo"
         },
         {
             "language": "English",
-            "fluency": "Native speaker"
+            "fluency": "Básico - Intermedio"
         }
     ],
     "interests": [

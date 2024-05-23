@@ -1,0 +1,21 @@
+---
+import {basics} from "@cv";
+import MapIcon from "@/icons/MapIcon.astro";
+
+const { location } = basics;
+---
+
+<div>
+    <p>{location.city} - {location.region} {location.countryCode}</p>
+</div>
+<style>
+    p {
+        font-size: .8rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        font-weight: 100;
+        color: grey;
+    }
+</style>

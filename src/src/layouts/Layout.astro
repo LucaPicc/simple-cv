@@ -1,5 +1,5 @@
 ---
-import { basics } from "@cv"
+import { basics, skills } from "@cv"
 
 interface Props {
     title: string
@@ -7,7 +7,17 @@ interface Props {
 
 const { title } = Astro.props
 
-const { image, summary, url } = basics
+const { image } = basics
+
+const keywordsMeta = new Set();
+
+skills.forEach(({name, keywords}) => {
+    keywordsMeta.add(name)
+    keywords.forEach((key) => {
+        keywordsMeta.add(key)
+    })
+})
+
 ---
 <html lang="es">
     <head>
@@ -19,6 +29,9 @@ const { image, summary, url } = basics
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <meta name="author" content="Luca Piccinini"/>
+        <meta name="keywords" content={Array.from(keywordsMeta).join(",")}/>
+        <meta name="description" content={basics.summary}/>
     </head>
     <body>
         <slot/>

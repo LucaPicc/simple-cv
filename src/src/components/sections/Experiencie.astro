@@ -1,13 +1,14 @@
 ---
 import BuildingIcon from "@/icons/BuildingIcon.astro";
+import CodeIcon from "@/icons/CodeIcon.astro";
 import Section from "../Section.astro";
 import { work } from "@cv";
 ---
 
-<Section title="expreriencia laboral">
+<Section title="Expreriencia Laboral">
     <ul>
         {
-            work.map(({ name, startDate, endDate, position, summary, url }) => {
+            work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
                 return (
                     <li>
                         <article>
@@ -45,6 +46,16 @@ import { work } from "@cv";
                             </header>
                             <footer>
                                 <p>{summary}</p>
+                                <div class="highlights-container">
+                                    <h4>Logros/Desafios</h4>
+                                    <ul class="highlights-list">
+                                        {
+                                            highlights.map((highlight) => (
+                                                <li><p>{highlight}</p></li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
                             </footer>
                         </article>
                     </li>
@@ -93,8 +104,22 @@ import { work } from "@cv";
         font-weight: 400;
     }
 
-    header {
+    article header {
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    @media (width <= 1000px) {
+        article header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+        }
     }
 
     time {
@@ -109,6 +134,15 @@ import { work } from "@cv";
         text-align: justify;
     }
 
+    .highlights-list {
+        gap: 5px !important;
+        list-style-type: square;
+        margin-left: 20px;
+    }
+
+    footer ul li {
+        margin-top: 0;
+    }
     .title {
         display: flex;
         flex-direction: row;
@@ -118,4 +152,25 @@ import { work } from "@cv";
     .title h3 {
         margin-left: .5rem;
     }
+
+    .highlights-container {
+        margin-top: 15px;
+        padding-left: .5rem;
+    }
+
+    .highlights-container h4 {
+        margin-bottom: 1px;
+        color: #555;
+        font-weight: bold !important;
+    }
+    .highlights-container ul {
+        margin-top: 10px !important;
+    }
+
+    .highlights-container li p{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
 </style>

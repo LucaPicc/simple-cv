@@ -2,8 +2,10 @@
 import { basics } from "@cv"
 import Section from "@/components/Section.astro"
 import CodeIcon from "@/icons/CodeIcon.astro"
-import Contact from "./Contact.astro"
-
+import Contact from "../common/Contact.astro"
+import Location from "../common/Location.astro"
+import { Image } from 'astro:assets';
+import MeImage from "public/me2.png"
 
 const {name, label, image, email, phone, summary, location, profiles} = basics
 
@@ -11,7 +13,12 @@ const {name, label, image, email, phone, summary, location, profiles} = basics
 <Section>
     <div class="container">
         <figure>
-            <img src={image} alt={name}/>
+            <Image src={MeImage} alt={name} width={128} style={{
+                "aspect-ratio": "1 / 1",
+                "object-fit": "cover",
+                "border-radius": "16px",
+                "margin-bottom": "0"
+            }}/>
         </figure>     
         <div class="info">
             <h1>{name}</h1>
@@ -20,6 +27,7 @@ const {name, label, image, email, phone, summary, location, profiles} = basics
                 <CodeIcon width="1rem" height="1rem"/>
                 <h2>{label}</h2>
             </div>
+            <Location/>
             <p class="summary">{summary}</p>
         </div>
     </div>
@@ -34,7 +42,7 @@ const {name, label, image, email, phone, summary, location, profiles} = basics
         margin-bottom: 20px;
     }
 
-    img {
+    .me-image {
         aspect-ratio: 1 / 1;
         object-fit: cover;
         width: 128px;
@@ -57,7 +65,7 @@ const {name, label, image, email, phone, summary, location, profiles} = basics
 
     h2 {
         color: grey;
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-top: .25rem;
         display: flex;
     }
