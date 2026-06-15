@@ -50,6 +50,12 @@ skills.forEach(({name, keywords}) => {
         padding: 0;
     }
 
+    html,
+    body {
+        background: #fff;
+        color: #111;
+    }
+
     a {
         text-decoration: none;
     }
@@ -78,6 +84,22 @@ skills.forEach(({name, keywords}) => {
     }
 
     @media print {
+        @page {
+            size: A4;
+            margin: 12mm;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        body {
+            background: #fff !important;
+            color: #111;
+            print-color-adjust: exact;
+            -webkit-print-color-adjust: exact;
+        }
+
         .no-print {
             display: none !important;
         }

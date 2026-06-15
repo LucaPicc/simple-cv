@@ -1,12 +1,12 @@
 {
     "basics": {
         "name": "Luca Piccinini",
-        "label": "Software Developer",
+        "label": "Senior Software Engineer",
         "image": "/me2.webp",
         "email": "luca.piccinini0009@gmail.com",
         "phone": "+54 2317-517453",
         "url": "https://www.linkedin.com/in/lucapiccinini",
-        "summary": "Apasionado por la tecnología y el desarrollo de software, estoy terminando mi carrera en Ingeniería Electrónica. Como autodidacta, he adquirido y perfeccionado habilidades en diversas áreas del desarrollo de software, demostrando una capacidad constante para aprender y adaptarme a nuevas tecnologías. Mi formación en ingeniería me proporciona una sólida base en la resolución de problemas y el pensamiento lógico, lo cual aplico en cada proyecto en el que me involucro. Estoy motivado por la innovación y siempre busco contribuir a proyectos desafiantes y de impacto.",
+        "summary": "Senior Software Engineer with 5+ years of experience building fintech and cryptocurrency products. Specialized in Python (Django, FastAPI) and TypeScript (NestJS), designing scalable systems, microservices and event-driven architectures. Experienced in distributed systems, cloud-native applications, AWS, RabbitMQ, Redis, PostgreSQL and MongoDB. Strong background in backend engineering, technical design and cross-functional collaboration, with additional experience building web and mobile applications using React and React Native. I actively leverage modern AI-powered development tools, including Claude Code and OpenAI Codex, to accelerate software delivery, improve code quality and enhance engineering productivity.",
         "location": {
             "address": "",
             "postalCode": "1900",
@@ -30,27 +30,32 @@
     "work": [
         {
             "name": "Ripio",
-            "position": "SSr. Software Developer",
+            "position": "Senior Software Engineer",
             "url": "https://ripio.com",
             "startDate": "2022-12-05",
             "endDate": null,
-            "summary": "Me desempeño como desarrollador fullstack, aunque principalmente desempeño tareas de backend. Estoy trabajando con Django, Django Rest Framework, Node JS, express JS, Socket.io, Docker entre otras tecnologías para el desarrollo de micro servicios.",
+            "summary": "Design, development and maintenance of fintech and cryptocurrency products using Python (Django, FastAPI), TypeScript (NestJS), React and React Native. Responsible for backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical business operations.",
             "highlights": [
-                "Integración de servicios de terceros a los flujos de la empresa",
-                "Desarrollo de servicios de websocket para comunicación bidireccional con los clientes"
+                "Built and evolved microservices and event-driven architectures supporting wallet operations, balance calculation, transaction processing and referral systems",
+                "Designed scalable APIs and backend services consumed by internal and customer-facing products",
+                "Participated in technical design and architectural decisions focused on scalability, reliability and maintainability",
+                "Worked extensively with RabbitMQ, Redis, PostgreSQL, MongoDB and AWS",
+                "Developed real-time communication services using WebSockets and Socket.IO",
+                "Leveraged AI-assisted development workflows using Claude Code and OpenAI Codex"
             ]
         },
         {
             "name": "Comparaencasa.com",
-            "position": "Software Developer",
+            "position": "Software Engineer",
             "url": "https://www.comparaencasa.com/",
             "startDate": "2021-12-05",
             "endDate": "2022-12-05",
-            "summary": "En comparaencasa me desempeñe como desarrollador full stack, trabajando con Node JS, Django, Django Rest Framework, Next JS entre otras tecnologías. Lleve adelante el desarrollo de varios proyecto y colabore en el despliegue de ellos.",
+            "summary": "Full-stack software engineer working with Django, FastAPI, Node.js, Next.js and cloud-based services. Participated in the development, deployment and optimization of multiple customer-facing products.",
             "highlights": [
-                "Desarrollo y despliegue de servicio para la entrega y generación de paginas estáticas",
-                "Optimización de performance de sitio de la empresa.",
-                "Posicionamiento orgánico en buscadores con SEO y performance"
+                "Developed and deployed services for static content generation and delivery",
+                "Improved application performance and scalability",
+                "Implemented SEO and performance optimizations that increased organic visibility",
+                "Collaborated across backend and frontend teams to deliver new features"
             ]
         },
         {
@@ -92,19 +97,6 @@
             ]
         }
     ],
-    "volunteer": [
-        {
-            "organization": "Organization",
-            "position": "Volunteer",
-            "url": "https://organization.com/",
-            "startDate": "2012-01-01",
-            "endDate": "2013-01-01",
-            "summary": "Description…",
-            "highlights": [
-                "Awarded 'Volunteer of the Month'"
-            ]
-        }
-    ],
     "education": [
         {
             "institution": "Facultad de Ingeniería UNLP",
@@ -115,14 +107,6 @@
             "endDate": null,
             "score": "6.5",
             "courses": []
-        }
-    ],
-    "awards": [
-        {
-            "title": "Award",
-            "date": "2014-11-01",
-            "awarder": "Company",
-            "summary": "There is no spoon."
         }
     ],
     "certificates": [
@@ -139,15 +123,6 @@
             "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
         }
     ],
-    "publications": [
-        {
-            "name": "Publication",
-            "publisher": "Company",
-            "releaseDate": "2014-10-01",
-            "url": "https://publication.com",
-            "summary": "Description…"
-        }
-    ],
     "skills": [
         {
             "name": "Python",
@@ -160,8 +135,8 @@
             "keywords": ["Scripting", "Backend", "Frontend", "Web", "Microservices"]
         },
         {
-            "name": "Typescript",
-            "level": "50",
+            "name": "TypeScript",
+            "level": "80",
             "keywords": ["Backend", "Frontend", "Web", "Microservices"]
         },
         {
@@ -181,7 +156,7 @@
         },
         {
             "name": "React",
-            "level": "80",
+            "level": "85",
             "keywords": ["Library", "Frontend", "Web"]
         },
         {
@@ -191,7 +166,7 @@
         },
         {
             "name": "Docker",
-            "level": "70",
+            "level": "80",
             "keywords": ["Microservices", "Deploys"]
         },
         {
@@ -201,7 +176,7 @@
         },
         {
             "name": "Node JS",
-            "level": "80",
+            "level": "85",
             "keywords": ["Framework", "Backend", "Microservices"]
         },
         {
@@ -226,7 +201,7 @@
         },
         {
             "name": "Redis",
-            "level": "80",
+            "level": "85",
             "keywords": ["Databases", "noSQL"]
         },
         {
@@ -256,8 +231,48 @@
         },
         {
             "name": "FastAPI",
-            "level": "60",
+            "level": "85",
             "keywords": ["Framework", "Backend"]
+        },
+        {
+            "name": "RabbitMQ",
+            "level": "85",
+            "keywords": ["Message Broker", "Backend", "Event-Driven Architecture"]
+        },
+        {
+            "name": "NestJS",
+            "level": "85",
+            "keywords": ["Framework", "Backend", "Microservices"]
+        },
+        {
+            "name": "AWS",
+            "level": "80",
+            "keywords": ["Cloud", "Backend", "Deploys"]
+        },
+        {
+            "name": "React Native",
+            "level": "80",
+            "keywords": ["Framework", "Mobile", "Frontend"]
+        },
+        {
+            "name": "Microservices",
+            "level": "90",
+            "keywords": ["Architecture", "Backend", "Distributed Systems"]
+        },
+        {
+            "name": "Distributed Systems",
+            "level": "85",
+            "keywords": ["Architecture", "Backend", "Scalability"]
+        },
+        {
+            "name": "Event-Driven Architecture",
+            "level": "85",
+            "keywords": ["Architecture", "Backend", "RabbitMQ"]
+        },
+        {
+            "name": "Kubernetes",
+            "level": "70",
+            "keywords": ["Cloud", "Deploys", "Containers"]
         }
 
     ],
@@ -269,33 +284,6 @@
         {
             "language": "English",
             "fluency": "Básico - Intermedio"
-        }
-    ],
-    "interests": [
-        {
-            "name": "Wildlife",
-            "keywords": [
-                "Ferrets",
-                "Unicorns"
-            ]
-        }
-    ],
-    "references": [
-        {
-            "name": "Jane Doe",
-            "reference": "Reference…"
-        }
-    ],
-    "projects": [
-        {
-            "name": "Project",
-            "startDate": "2019-01-01",
-            "endDate": "2021-01-01",
-            "description": "Description...",
-            "highlights": [
-                "Won award at AIHacks 2016"
-            ],
-            "url": "https://project.com/"
         }
     ]
 }
