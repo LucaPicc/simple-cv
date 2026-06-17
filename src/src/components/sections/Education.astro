@@ -4,7 +4,7 @@ import Section from "../Section.astro";
 import EducationIcon from "@/icons/EducationIcon.astro";
 ---
 
-<Section title="Educación">
+<Section title="Education">
     <ul>
         {
             education.map(({ url, institution, startDate, endDate, area }) => (
@@ -17,7 +17,7 @@ import EducationIcon from "@/icons/EducationIcon.astro";
                                     <h3>
                                         <a
                                             href={url}
-                                            title={`Ver ${institution}`}
+                                            title={`View ${institution}`}
                                             target="_blank"
                                         >
                                             {institution}
@@ -32,7 +32,7 @@ import EducationIcon from "@/icons/EducationIcon.astro";
                                 </time>
                                 {" - "}
                                 <time datetime={endDate} data-title={endDate}>
-                                    {endDate || "actual"}
+                                    {endDate || "current"}
                                 </time>
                             </div>
                         </header>
