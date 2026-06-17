@@ -64,12 +64,12 @@
             "url": "https://smartsafety.com.ar/",
             "startDate": "2021-04-01",
             "endDate": "2021-12-05",
-            "summary": "En Smart Safety me desempeñe como desarrollador fullstack. Adquirí responsabilidades de manera progresivas teniendo personas a cargo para llevar los distintos desarrollos adelante. Las principales tecnologías con las que trabajábamos",
+            "summary": "Worked as a full-stack developer at Smart Safety, progressively taking on more responsibility and coordinating people to move different software initiatives forward. The main technologies used included Django, JavaScript, JQuery and MySQL.",
             "highlights": [
-                "Digitalización de procesos industriales complejos",
-                "Desarrollo de gestor de archivos en la nube",
-                "Desarrollo de generador de informes y declaraciones juradas con informacion de los procesos y especificaciones de los clientes",
-                "Liderazgo de equipos"
+                "Digitized complex industrial processes",
+                "Developed a cloud-based file management system",
+                "Built a report and affidavit generator using process data and client specifications",
+                "Led development teams"
             ]
         },
         {
@@ -78,31 +78,31 @@
             "url": "https://ripio.com",
             "startDate": "2020-08-01",
             "endDate": "2020-03-01",
-            "summary": "En Integridad Informática me desempeñe principalmente como desarrollador fullstack. Fui el líder de uno de los proyectos de la empresa. Las principales tecnologías con las cuales trabajábamos eran JQuery, Javascript, Django y MySQL",
+            "summary": "Worked mainly as a full-stack developer at Integridad Informatica and led one of the company's projects. The main technologies used were JQuery, JavaScript, Django and MySQL.",
             "highlights": [
-                "Desarrollador principal de proyecto de gestión de economía circular",
-                "Desarrolló de wallet basado en impacto ambiental de entidades participantes del sistema de economía circular"
+                "Served as lead developer for a circular economy management project",
+                "Developed a wallet based on the environmental impact of entities participating in the circular economy system"
             ]
         },
         {
-            "name": "Facultad de Ingeniería UNLP",
-            "position": "Ayudante Alumno",
+            "name": "UNLP School of Engineering",
+            "position": "Student Teaching Assistant",
             "url": "https://ing.unlp.edu.ar/",
             "startDate": "2019-01-01",
             "endDate": "2021-01-01",
-            "summary": "En la Facultad de Ingeniería me desempeñe como ayudante alumna de la materia de matemática para ingeniería, que es una materia introductoria a la carrera. En esta etapa dicte clases teóricos practicas, hice corrección de exámenes y trabajos prácticos.",
+            "summary": "Worked as a student teaching assistant for Engineering Mathematics, an introductory course in the engineering program. Taught theoretical and practical classes, graded exams and reviewed practical assignments.",
             "highlights": [
-                "Dictado de clases",
-                "Corrección de exámenes"
+                "Taught classes",
+                "Graded exams"
             ]
         }
     ],
     "education": [
         {
-            "institution": "Facultad de Ingeniería UNLP",
+            "institution": "UNLP School of Engineering",
             "url": "https://ing.unlp.edu.ar/",
-            "area": "Ingeniería Electronica",
-            "studyType": "Grado",
+            "area": "Electronic Engineering",
+            "studyType": "Degree",
             "startDate": "2013-01-01",
             "endDate": null,
             "score": "6.5",
@@ -111,13 +111,13 @@
     ],
     "certificates": [
         {
-            "name": "Aprende React + Firebase",
+            "name": "Learn React + Firebase",
             "date": "2021-04-01",
             "issuer": "Udemy",
             "url": "https://www.udemy.com/certificate/UC-d4466584-71f4-4ac2-832c-1a837c5b6d41/"
         },
         {
-            "name": "Programacion orientada a objectos con Java",
+            "name": "Object-Oriented Programming with Java",
             "date": "2019-10-03",
             "issuer": "Udemy",
             "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
@@ -212,22 +212,22 @@
         {
             "name": "C",
             "level": "40",
-            "keywords": ["Lenguaje"]
+            "keywords": ["Language"]
         },
         {
             "name": "Assembly",
             "level": "40",
-            "keywords": ["Lenguaje"]
+            "keywords": ["Language"]
         },
         {
             "name": "VHDL",
             "level": "40",
-            "keywords": ["Lenguaje"]
+            "keywords": ["Language"]
         },
         {
             "name": "SQL",
             "level": "60",
-            "keywords": ["Lenguaje"]
+            "keywords": ["Language"]
         },
         {
             "name": "FastAPI",
@@ -278,12 +278,12 @@
     ],
     "languages": [
         {
-            "language": "Español",
-            "fluency": "Nativo"
+            "language": "Spanish",
+            "fluency": "Native"
         },
         {
             "language": "English",
-            "fluency": "Básico - Intermedio"
+            "fluency": "Basic - Intermediate"
         }
     ]
 }

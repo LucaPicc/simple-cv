@@ -5,7 +5,7 @@ import Section from "../Section.astro";
 import { work } from "@cv";
 ---
 
-<Section title="Expreriencia Laboral">
+<Section title="Work Experience">
     <ul>
         {
             work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
@@ -19,7 +19,7 @@ import { work } from "@cv";
                                         <h3>
                                             <a
                                                 href={url}
-                                                title={`Ver ${name}`}
+                                                title={`View ${name}`}
                                                 target="_blank"
                                             >
                                                 {name}
@@ -40,14 +40,14 @@ import { work } from "@cv";
                                         datetime={endDate}
                                         data-title={endDate}
                                     >
-                                        {endDate || "actual"}
+                                        {endDate || "current"}
                                     </time>
                                 </div>
                             </header>
                             <footer>
                                 <p>{summary}</p>
                                 <div class="highlights-container">
-                                    <h4>Logros/Desafios</h4>
+                                    <h4>Achievements/Challenges</h4>
                                     <ul class="highlights-list">
                                         {
                                             highlights.map((highlight) => (
