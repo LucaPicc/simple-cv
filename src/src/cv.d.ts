@@ -46,6 +46,7 @@ interface Work {
     startDate: DateStr
     endDate: DateStr | null
     summary: string
+    technologies: Array<string>
     highlights: Highlight
 }
 

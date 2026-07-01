@@ -1,8 +1,5 @@
 ---
-import {basics} from "@cv";
-import MapIcon from "@/icons/MapIcon.astro";
-
-const { location } = basics;
+const { location } = Astro.props;
 ---
 
 <div>
@@ -10,12 +7,19 @@ const { location } = basics;
 </div>
 <style>
     p {
-        font-size: .8rem;
+        margin-top: .35rem;
+        font-size: .9rem;
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin: 0;
-        font-weight: 100;
-        color: grey;
+        font-weight: 500;
+        color: var(--color-muted);
+    }
+
+    @media print {
+        p {
+            margin-top: .2rem;
+            font-size: .82rem;
+        }
     }
 </style>

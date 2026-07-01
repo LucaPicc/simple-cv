@@ -1,10 +1,29 @@
 ---
 import GlobeIcon from "@/icons/GlobeIcon.astro";
 import Section from "../Section.astro";
-import { languages } from "@cv";
 
+type LanguageItem = {
+    language: string
+    fluency: string
+}
+
+type LanguageLabels = {
+    sectionTitle: string
+}
+
+interface Props {
+    languages: LanguageItem[]
+    labels?: LanguageLabels
+}
+
+const {
+    languages,
+    labels = {
+        sectionTitle: "Languages"
+    }
+} = Astro.props as Props;
 ---
-<Section title="Languages">
+<Section title={labels.sectionTitle}>
     <ul>
         {
             languages.map(({language, fluency}) => (
@@ -22,8 +41,21 @@ import { languages } from "@cv";
 <style>
 
     ul {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+    }
+
+    li {
+        min-width: 160px;
+    }
+
+    article {
+        height: 100%;
+        padding: .85rem 1rem;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        background: var(--color-surface);
     }
 
     article header {
@@ -31,12 +63,15 @@ import { languages } from "@cv";
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: .4rem;
+        color: var(--color-accent);
     }
 
     article header h3 {
-        font-size: 1.5rem;
+        color: var(--color-text);
+        font-size: 1.05rem;
         margin-bottom: 1px;
-        font-weight: 500 !important;
+        font-weight: 800 !important;
     }
 
     article footer {
@@ -45,7 +80,33 @@ import { languages } from "@cv";
 
     article footer p {
         margin-top: .2rem;
-        color: #555;
+        color: var(--color-muted);
+        font-weight: 600;
+    }
+
+    @media print {
+        ul {
+            gap: .4rem;
+        }
+
+        li {
+            min-width: 120px;
+        }
+
+        article {
+            padding: .65rem .75rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background: var(--color-surface);
+        }
+
+        article header h3 {
+            font-size: .95rem;
+        }
+
+        article footer p {
+            font-size: .82rem;
+        }
     }
 
 </style>

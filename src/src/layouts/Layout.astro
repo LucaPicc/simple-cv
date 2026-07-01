@@ -39,9 +39,22 @@ skills.forEach(({name, keywords}) => {
 </html>
 
 <style is:global>
+    :root {
+        --color-text: #17202a;
+        --color-muted: #5c6672;
+        --color-subtle: #eef1f4;
+        --color-border: #d9dee5;
+        --color-surface: #ffffff;
+        --color-surface-soft: #f7f9fb;
+        --color-accent: #2563eb;
+        --color-accent-soft: #e8f0ff;
+        --shadow-sm: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
     html {
-        font-family: VT323;
-        letter-spacing: -0.025rem;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        letter-spacing: 0;
+        line-height: 1.55;
     }
 
     body,
@@ -52,11 +65,12 @@ skills.forEach(({name, keywords}) => {
 
     html,
     body {
-        background: #fff;
-        color: #111;
+        background: #f3f6f9;
+        color: var(--color-text);
     }
 
     a {
+        color: inherit;
         text-decoration: none;
     }
 
@@ -77,6 +91,39 @@ skills.forEach(({name, keywords}) => {
     h3,
     h4 {
         margin: 0;
+        line-height: 1.2;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    section + section {
+        margin-top: 2rem;
+    }
+
+    section > h2 {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap: .75rem;
+        margin-bottom: 1rem;
+        color: var(--color-text);
+        font-size: .82rem;
+        font-weight: 800;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
+    section > h2::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--color-border);
     }
 
     .print {
@@ -86,11 +133,11 @@ skills.forEach(({name, keywords}) => {
     @media print {
         @page {
             size: A4;
-            margin: 12mm;
+            margin: 10mm;
         }
 
         html {
-            font-size: 12px;
+            font-size: 11.5px;
         }
 
         body {
@@ -106,6 +153,15 @@ skills.forEach(({name, keywords}) => {
 
         .print {
             display: block !important;
+        }
+
+        section + section {
+            margin-top: 1.15rem;
+        }
+
+        section > h2 {
+            margin-bottom: .75rem;
+            font-size: .8rem;
         }
     }
 </style>
