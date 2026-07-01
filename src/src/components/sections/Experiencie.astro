@@ -1,14 +1,47 @@
 ---
 import BuildingIcon from "@/icons/BuildingIcon.astro";
-import CodeIcon from "@/icons/CodeIcon.astro";
 import Section from "../Section.astro";
-import { work } from "@cv";
+
+type WorkItem = {
+    name: string
+    startDate: string
+    endDate: string | null
+    position: string
+    summary: string
+    url: string
+    technologies: string[]
+    highlights: string[]
+}
+
+type WorkLabels = {
+    sectionTitle: string
+    view: string
+    current: string
+    technologies: string
+    impact: string
+}
+
+interface Props {
+    work: WorkItem[]
+    labels?: WorkLabels
+}
+
+const {
+    work,
+    labels = {
+        sectionTitle: "Work Experience",
+        view: "View",
+        current: "current",
+        technologies: "Technologies",
+        impact: "Challenges & Impact"
+    }
+} = Astro.props as Props;
 ---
 
-<Section title="Work Experience">
+<Section title={labels.sectionTitle}>
     <ul>
         {
-            work.map(({ name, startDate, endDate, position, summary, url, highlights }) => {
+            work.map(({ name, startDate, endDate, position, summary, url, technologies, highlights }) => {
                 return (
                     <li>
                         <article>
@@ -19,7 +52,7 @@ import { work } from "@cv";
                                         <h3>
                                             <a
                                                 href={url}
-                                                title={`View ${name}`}
+                                                title={`${labels.view} ${name}`}
                                                 target="_blank"
                                             >
                                                 {name}
@@ -40,14 +73,24 @@ import { work } from "@cv";
                                         datetime={endDate}
                                         data-title={endDate}
                                     >
-                                        {endDate || "current"}
+                                        {endDate || labels.current}
                                     </time>
                                 </div>
                             </header>
                             <footer>
                                 <p>{summary}</p>
+                                <div class="technologies-container">
+                                    <h4>{labels.technologies}</h4>
+                                    <ul class="technologies-list">
+                                        {
+                                            technologies.map((technology) => (
+                                                <li>{technology}</li>
+                                            ))
+                                        }
+                                    </ul>
+                                </div>
                                 <div class="highlights-container">
-                                    <h4>Achievements/Challenges</h4>
+                                    <h4>{labels.impact}</h4>
                                     <ul class="highlights-list">
                                         {
                                             highlights.map((highlight) => (
@@ -67,15 +110,12 @@ import { work } from "@cv";
 
 <style>
     ul {
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 32px;
+        gap: 1rem;
         width: 100%;
-        margin-bottom: 20px;
-        /* width: 450px; */
     }
 
     article {
@@ -83,16 +123,20 @@ import { work } from "@cv";
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        padding: 1.15rem;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        background: var(--color-surface);
     }
 
     article h3 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #111;
+        font-size: 1.18rem;
+        font-weight: 800;
+        color: var(--color-text);
     }
 
     article a {
-        color: #111;
+        color: var(--color-text);
     }
 
     article a:hover {
@@ -100,17 +144,19 @@ import { work } from "@cv";
     }
 
     article h4 {
-        color: #222;
-        font-weight: 400;
+        color: var(--color-muted);
+        font-size: .94rem;
+        font-weight: 700;
     }
 
     article header {
-        margin-bottom: 10px;
+        margin-bottom: .8rem;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         width: 100%;
         justify-content: space-between;
+        gap: 1rem;
     }
 
     @media (width <= 1000px) {
@@ -123,21 +169,42 @@ import { work } from "@cv";
     }
 
     time {
-        color: #555;
-        font-size: 0.85rem;
-        min-width: 102px;
+        color: var(--color-muted);
+        font-size: 0.84rem;
+        font-weight: 600;
+        white-space: nowrap;
         cursor: default;
     }
 
     footer p {
         margin: 0;
-        text-align: justify;
+        color: var(--color-muted);
+        text-align: left;
     }
 
     .highlights-list {
         gap: 5px !important;
         list-style-type: square;
-        margin-left: 20px;
+        margin-left: 1.15rem;
+    }
+
+    .technologies-list {
+        margin-top: 8px !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px !important;
+    }
+
+    .technologies-list li {
+        padding: 3px 8px;
+        border: 1px solid var(--color-border);
+        border-radius: 6px;
+        background: var(--color-surface-soft);
+        color: var(--color-text);
+        font-size: 0.85rem;
+        font-weight: 700;
+        line-height: 1.2;
     }
 
     footer ul li {
@@ -147,20 +214,30 @@ import { work } from "@cv";
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: .45rem;
     }
 
     .title h3 {
-        margin-left: .5rem;
+        margin-left: 0;
     }
 
     .highlights-container {
-        margin-top: 15px;
-        padding-left: .5rem;
+        margin-top: 1rem;
+        padding-left: 0;
     }
 
-    .highlights-container h4 {
-        margin-bottom: 1px;
-        color: #555;
+    .technologies-container {
+        margin-top: 1rem;
+        padding-left: 0;
+    }
+
+    .highlights-container h4,
+    .technologies-container h4 {
+        margin-bottom: .35rem;
+        color: var(--color-text);
+        font-size: .82rem;
+        letter-spacing: .04em;
+        text-transform: uppercase;
         font-weight: bold !important;
     }
     .highlights-container ul {
@@ -171,6 +248,88 @@ import { work } from "@cv";
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+    }
+
+    @media print {
+        ul {
+            gap: .8rem;
+        }
+
+        article {
+            padding: .85rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background: var(--color-surface);
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        article header {
+            margin-bottom: .45rem;
+            gap: .6rem;
+        }
+
+        article h3 {
+            font-size: 1rem;
+        }
+
+        article h4,
+        time {
+            font-size: .8rem;
+        }
+
+        footer p {
+            font-size: .86rem;
+            line-height: 1.35;
+        }
+
+        .technologies-container,
+        .highlights-container {
+            margin-top: .55rem;
+        }
+
+        .technologies-container h4,
+        .highlights-container h4 {
+            margin-bottom: .22rem;
+            font-size: .72rem;
+        }
+
+        .technologies-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px !important;
+            margin-top: .2rem !important;
+            line-height: 1.2;
+        }
+
+        .technologies-list li {
+            display: list-item;
+            padding: 2px 6px;
+            border: 1px solid var(--color-border);
+            border-radius: 5px;
+            background: var(--color-surface-soft);
+            color: var(--color-text);
+            font-size: .72rem;
+            font-weight: 700;
+        }
+
+        .technologies-list li:not(:last-child)::after {
+            content: none;
+        }
+
+        .highlights-list {
+            margin-top: .3rem !important;
+            margin-left: .95rem;
+        }
+
+        .highlights-list li {
+            margin-top: .2rem;
+            break-inside: avoid;
+        }
+
+        .highlights-list li p {
+            line-height: 1.3;
+        }
     }
 
 </style>

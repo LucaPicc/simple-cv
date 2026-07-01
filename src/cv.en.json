@@ -1,0 +1,557 @@
+{
+    "basics": {
+        "name": "Luca Piccinini",
+        "label": "Senior Software Engineer",
+        "image": "/me2.webp",
+        "email": "luca.piccinini0009@gmail.com",
+        "phone": "+54 2317-517453",
+        "url": "https://www.linkedin.com/in/lucapiccinini",
+        "summary": "Senior Software Engineer with 5+ years of experience building fintech, crypto and high-demand transactional systems. Specialized in Python, Django, FastAPI, TypeScript and NestJS, focused on scalable APIs, microservices, distributed systems and event-driven architectures. Experienced taking ownership of critical features end to end, from problem analysis and technical design to implementation, production rollout, monitoring and evolution. I focus on building clean, maintainable software with real business impact, prioritizing simple, robust and scalable solutions. I regularly work with AWS, RabbitMQ, Redis, PostgreSQL, MongoDB, Docker and Kubernetes. I also build web and mobile applications with React and React Native, and use AI-assisted development tools such as Claude Code and OpenAI Codex to accelerate debugging, refactors, test generation, technical research and delivery.",
+        "location": {
+            "address": "",
+            "postalCode": "1900",
+            "city": "La Plata",
+            "countryCode": "AR",
+            "region": "Buenos Aires"
+        },
+        "profiles": [
+            {
+                "network": "Github",
+                "username": "LucaPicc",
+                "url": "https://github.com/LucaPicc"
+            },
+            {
+                "network": "Linkedin",
+                "username": "lucapiccinini",
+                "url": "https://www.linkedin.com/in/lucapiccinini"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Ripio",
+            "position": "Senior Software Engineer",
+            "url": "https://ripio.com",
+            "startDate": "2022-12-05",
+            "endDate": null,
+            "summary": "Design, development and evolution of fintech and crypto products using Python, Django, FastAPI, TypeScript, NestJS, React and React Native. I work on backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical business operations, including wallets, transactions, balances, limits, referrals and real-time communication.",
+            "technologies": [
+                "Python",
+                "Django",
+                "FastAPI",
+                "TypeScript",
+                "NestJS",
+                "React",
+                "React Native",
+                "RabbitMQ",
+                "Redis",
+                "PostgreSQL",
+                "MongoDB",
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "WebSockets",
+                "Socket.IO"
+            ],
+            "highlights": [
+                "Led the architecture and development of the Profit and Loss (P&L) product for B2C clients, using asynchronous processing and backend-driven conditional rendering",
+                "Unified user balances from different company products into a single source of truth through event-driven asynchronous processing. This removed direct queries to multiple balance microservices and reduced read latency by approximately 80%",
+                "Consolidated operations from multiple services into a unified backend layer, improving traceability for internal teams, data consistency and the user experience through an integrated movement view. This reduced backend request load by approximately 30% and improved query latency by up to 80% by serving preprocessed data",
+                "Redesigned limit logic from different services into a single backend, processing user movements asynchronously and keeping limits updated in near real time. This reduced latency for limit-related queries by approximately 80%",
+                "Implemented a WebSocket service for real-time client communication, allowing users to view movements, balances and relevant events without manual refresh. This reduced unnecessary app refresh requests by approximately 70%",
+                "Drove the adoption of Clean Architecture and SOLID principles in backend services, improving maintainability, testability and responsibility boundaries in distributed systems",
+                "Contributed to the CX workflow by integrating third-party services for customer support, reducing agent response time by approximately 50%, improving support quality and enabling user interaction auditing",
+                "Used AI tools such as Claude Code and OpenAI Codex to accelerate technical research, debugging, refactors and test generation while keeping critical review over final decisions"
+            ]
+        },
+        {
+            "name": "Comparaencasa.com",
+            "position": "Software Engineer",
+            "url": "https://www.comparaencasa.com/",
+            "startDate": "2021-12-05",
+            "endDate": "2022-12-05",
+            "summary": "Full-stack Software Engineer working with Django, FastAPI, Node.js, Next.js and cloud services. I contributed to the development, deployment and optimization of customer-facing products, focused on performance, scalability, static content generation and technical SEO.",
+            "technologies": [
+                "Django",
+                "FastAPI",
+                "Node.js",
+                "Next.js",
+                "JavaScript",
+                "Cloud Services",
+                "Static Site Generation",
+                "SEO",
+                "Web Performance",
+                "AWS"
+            ],
+            "highlights": [
+                "Automated static content generation and delivery for user-facing pages, reducing layout and publishing time by approximately 80%, with positive impact on user experience and SEO",
+                "Implemented a static caching system for content pages, reducing server load and improving site response times by approximately 70%",
+                "Optimized rendering flows in customer-facing products, contributing to a faster, more stable and consistent web experience",
+                "Applied technical SEO, page structure and web performance improvements to strengthen organic visibility, contributing to ranking for relevant searches and organic traffic growth",
+                "Built full-stack features integrating Django, FastAPI, Node.js, Next.js and cloud services, reducing friction between backend and frontend",
+                "Implemented AWS Lambda serverless functions for the insurance quote flow, reducing request latency and improving the user experience"
+            ]
+        },
+        {
+            "name": "Smart Safety Argentina",
+            "position": "Software Developer",
+            "url": "https://smartsafety.com.ar/",
+            "startDate": "2021-04-01",
+            "endDate": "2021-12-05",
+            "summary": "Full-stack Software Developer building solutions for industrial and safety process digitalization. I worked with Django, Django REST Framework, JavaScript, JQuery, MySQL and React, taking increasing responsibility over features, delivery and technical coordination.",
+            "technologies": [
+                "Django",
+                "Django REST Framework",
+                "JavaScript",
+                "JQuery",
+                "MySQL",
+                "React"
+            ],
+            "highlights": [
+                "Transformed manual industrial processes into traceable and reusable web applications, reducing dependency on repetitive operational tasks, lowering paper usage by up to 80% and strengthening process safety",
+                "Built report and affidavit generation tools from operational data, reducing manual workload, errors in recurring deliverables and work time by approximately 30%",
+                "Took ownership of full features from requirements discovery to production rollout, aligning business needs with concrete technical solutions",
+                "Coordinated development tasks and supported other team members to unblock technical problems and sustain business delivery",
+                "Improved development and deployment processes through continuous integration, environment standardization and workflow documentation. This reduced production errors by approximately 40% and incident recovery time by up to 80%"
+            ]
+        },
+        {
+            "name": "Integridad Informática",
+            "position": "Software Developer",
+            "url": "",
+            "startDate": "2020-08-01",
+            "endDate": "2021-03-01",
+            "summary": "Full-stack Software Developer working on management and circular economy projects. I mainly worked with Django, MySQL, JavaScript, JQuery and Docker, technically leading one of the company's projects.",
+            "technologies": [
+                "Django",
+                "MySQL",
+                "JavaScript",
+                "JQuery",
+                "Docker"
+            ],
+            "highlights": [
+                "Led the development of a circular economy management platform, turning a complex operational domain into usable core features",
+                "Designed backend modules for entity management, environmental impact tracking and operational flows, adding traceability to the system",
+                "Developed a wallet-like feature based on environmental impact metrics, translating non-trivial business rules into functional components",
+                "Delivered end-to-end features in a small team, increasing technical autonomy and speed when resolving blockers",
+                "Configured Docker to standardize development and deployment environments, reducing inconsistencies across environments",
+                "Applied clean code, modularity and separation of concerns principles to make product evolution easier"
+            ]
+        },
+        {
+            "name": "UNLP School of Engineering",
+            "position": "Student Teaching Assistant",
+            "url": "https://ing.unlp.edu.ar/",
+            "startDate": "2019-01-01",
+            "endDate": "2021-01-01",
+            "summary": "Student Teaching Assistant in Mathematics for Engineering, an introductory course at the UNLP School of Engineering. I taught theory and practice classes, graded exams and supported students in solving mathematical problems.",
+            "technologies": [
+                "Teaching",
+                "Mathematics",
+                "Technical Communication"
+            ],
+            "highlights": [
+                "Taught theory and practice classes for engineering students, developing clear technical communication for audiences with different knowledge levels",
+                "Graded exams and practical assignments, strengthening analytical judgment, precision and attention to detail",
+                "Supported students in solving complex problems, explaining abstract concepts in a structured and actionable way"
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Restaurant Admin Platform",
+            "description": "Personal backend project for managing restaurant operations using FastAPI, PostgreSQL, SQLAlchemy and Alembic.",
+            "highlights": [
+                "Implemented a backend API from scratch applying clean architecture principles, database migrations and maintainability-oriented design",
+                "Modeled relational entities and business flows with PostgreSQL, SQLAlchemy and Alembic",
+                "Used the project as a learning and experimentation space to improve backend design, testing and service structure practices"
+            ],
+            "keywords": [
+                "FastAPI",
+                "PostgreSQL",
+                "SQLAlchemy",
+                "Alembic",
+                "Backend",
+                "Clean Architecture"
+            ]
+        },
+        {
+            "name": "AI-assisted Development Workflow",
+            "description": "Personal AI-assisted development workflow using Claude Code and OpenAI Codex to accelerate technical research, debugging, refactors and test generation.",
+            "highlights": [
+                "Integrated AI tools into my daily development workflow to explore solutions, accelerate repetitive tasks and improve productivity",
+                "Use AI as technical support for debugging, code analysis, test generation and refactors while keeping critical engineering judgment",
+                "Experimented with modern tools to scale individual impact without sacrificing quality or maintainability"
+            ],
+            "keywords": [
+                "Claude Code",
+                "OpenAI Codex",
+                "AI-assisted Development",
+                "Refactoring",
+                "Testing",
+                "Productivity"
+            ]
+        },
+        {
+            "name": "News Processing Pipeline",
+            "description": "Personal Python pipeline for modular crypto news and data processing using Chain of Responsibility.",
+            "highlights": [
+                "Implemented a modular pipeline using the Chain of Responsibility pattern to separate processing and classification stages",
+                "Designed extensible components to make adding new sources, rules and transformations easier",
+                "Used the project to strengthen software design, modularity and separation of concerns"
+            ],
+            "keywords": [
+                "Python",
+                "Design Patterns",
+                "Chain of Responsibility",
+                "Pipelines",
+                "Backend"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "UNLP School of Engineering",
+            "url": "https://ing.unlp.edu.ar/",
+            "area": "Electronic Engineering",
+            "studyType": "Degree",
+            "startDate": "2013-01-01",
+            "endDate": "2020-01-01 (incomplete / on hold)",
+            "score": "6.5",
+            "courses": []
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Learn React + Firebase",
+            "date": "2021-04-01",
+            "issuer": "Udemy",
+            "url": "https://www.udemy.com/certificate/UC-d4466584-71f4-4ac2-832c-1a837c5b6d41/"
+        },
+        {
+            "name": "Object-Oriented Programming with Java",
+            "date": "2019-10-03",
+            "issuer": "Udemy",
+            "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Python",
+            "level": "100",
+            "keywords": [
+                "Backend",
+                "Microservices",
+                "APIs",
+                "Scripting"
+            ]
+        },
+        {
+            "name": "Javascript",
+            "level": "75",
+            "keywords": [
+                "Backend",
+                "Frontend",
+                "Web",
+                "Scripting"
+            ]
+        },
+        {
+            "name": "TypeScript",
+            "level": "80",
+            "keywords": [
+                "Backend",
+                "Frontend",
+                "Microservices",
+                "Web"
+            ]
+        },
+        {
+            "name": "Django",
+            "level": "95",
+            "keywords": [
+                "Backend",
+                "APIs",
+                "Microservices",
+                "Framework"
+            ]
+        },
+        {
+            "name": "FastAPI",
+            "level": "85",
+            "keywords": [
+                "Backend",
+                "APIs",
+                "Microservices",
+                "Framework"
+            ]
+        },
+        {
+            "name": "NestJS",
+            "level": "85",
+            "keywords": [
+                "Backend",
+                "Microservices",
+                "APIs",
+                "Framework"
+            ]
+        },
+        {
+            "name": "Node JS",
+            "level": "85",
+            "keywords": [
+                "Backend",
+                "Microservices",
+                "APIs"
+            ]
+        },
+        {
+            "name": "React",
+            "level": "85",
+            "keywords": [
+                "Frontend",
+                "Web",
+                "Library"
+            ]
+        },
+        {
+            "name": "React Native",
+            "level": "80",
+            "keywords": [
+                "Mobile",
+                "Frontend",
+                "Cross-platform"
+            ]
+        },
+        {
+            "name": "Next JS",
+            "level": "80",
+            "keywords": [
+                "Frontend",
+                "SSR",
+                "SEO",
+                "Performance"
+            ]
+        },
+        {
+            "name": "Django Rest Framework",
+            "level": "90",
+            "keywords": [
+                "Backend",
+                "APIs",
+                "Microservices"
+            ]
+        },
+        {
+            "name": "RabbitMQ",
+            "level": "85",
+            "keywords": [
+                "Message Broker",
+                "Event-Driven Architecture",
+                "Asynchronous Processing"
+            ]
+        },
+        {
+            "name": "Redis",
+            "level": "85",
+            "keywords": [
+                "Cache",
+                "Pub/Sub",
+                "NoSQL",
+                "Performance"
+            ]
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "90",
+            "keywords": [
+                "SQL",
+                "Databases",
+                "Query Optimization",
+                "Relational Modeling"
+            ]
+        },
+        {
+            "name": "MongoDB",
+            "level": "70",
+            "keywords": [
+                "NoSQL",
+                "Databases",
+                "Document Databases"
+            ]
+        },
+        {
+            "name": "MySQL",
+            "level": "90",
+            "keywords": [
+                "SQL",
+                "Databases",
+                "Relational Modeling"
+            ]
+        },
+        {
+            "name": "Docker",
+            "level": "80",
+            "keywords": [
+                "Containers",
+                "Deploys",
+                "Microservices"
+            ]
+        },
+        {
+            "name": "Kubernetes",
+            "level": "70",
+            "keywords": [
+                "Containers",
+                "Deploys",
+                "Cloud"
+            ]
+        },
+        {
+            "name": "AWS",
+            "level": "80",
+            "keywords": [
+                "Cloud",
+                "Cloud-native",
+                "Deploys",
+                "Scalability"
+            ]
+        },
+        {
+            "name": "Socket.io",
+            "level": "50",
+            "keywords": [
+                "WebSockets",
+                "Real-time",
+                "Backend"
+            ]
+        },
+        {
+            "name": "Microservices",
+            "level": "90",
+            "keywords": [
+                "Architecture",
+                "Backend",
+                "Distributed Systems",
+                "Scalability"
+            ]
+        },
+        {
+            "name": "Distributed Systems",
+            "level": "85",
+            "keywords": [
+                "Architecture",
+                "Backend",
+                "Reliability",
+                "Scalability"
+            ]
+        },
+        {
+            "name": "Event-Driven Architecture",
+            "level": "85",
+            "keywords": [
+                "Architecture",
+                "RabbitMQ",
+                "Asynchronous Processing",
+                "Backend"
+            ]
+        },
+        {
+            "name": "System Design",
+            "level": "80",
+            "keywords": [
+                "Architecture",
+                "Scalability",
+                "Reliability",
+                "Maintainability"
+            ]
+        },
+        {
+            "name": "Clean Code",
+            "level": "85",
+            "keywords": [
+                "Maintainability",
+                "Refactoring",
+                "Testing",
+                "Best Practices"
+            ]
+        },
+        {
+            "name": "AI-assisted Development",
+            "level": "80",
+            "keywords": [
+                "Claude Code",
+                "OpenAI Codex",
+                "Debugging",
+                "Refactoring",
+                "Testing",
+                "Productivity"
+            ]
+        },
+        {
+            "name": "HTML",
+            "level": "90",
+            "keywords": [
+                "Frontend",
+                "Web"
+            ]
+        },
+        {
+            "name": "CSS",
+            "level": "70",
+            "keywords": [
+                "Frontend",
+                "Web"
+            ]
+        },
+        {
+            "name": "Express JS",
+            "level": "50",
+            "keywords": [
+                "Backend",
+                "Web",
+                "Framework"
+            ]
+        },
+        {
+            "name": "SQL",
+            "level": "60",
+            "keywords": [
+                "Databases",
+                "Query Optimization",
+                "Relational Modeling"
+            ]
+        },
+        {
+            "name": "C",
+            "level": "40",
+            "keywords": [
+                "Language"
+            ]
+        },
+        {
+            "name": "Assembly",
+            "level": "40",
+            "keywords": [
+                "Language"
+            ]
+        },
+        {
+            "name": "VHDL",
+            "level": "40",
+            "keywords": [
+                "Language"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Spanish",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "Basic - Intermediate"
+        }
+    ]
+}

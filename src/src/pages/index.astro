@@ -6,19 +6,92 @@ import Skill from "@/components/sections/Skill.astro"
 import Education from "@/components/sections/Education.astro"
 import Languages from "@/components/sections/Languages.astro"
 import DownloadIcon from "@/icons/DownloadIcon.astro"
+import cvEs from "@cv"
+import cvEn from "../../cv.en.json"
+
+const labels = {
+	es: {
+		switchLabel: "Idioma del CV",
+		download: "Descargar PDF",
+		work: {
+			sectionTitle: "Experiencia",
+			view: "Ver",
+			current: "actualidad",
+			technologies: "Tecnologías",
+			impact: "Desafíos e impacto"
+		},
+		education: {
+			sectionTitle: "Educación",
+			view: "Ver",
+			current: "actualidad"
+		},
+		languages: {
+			sectionTitle: "Idiomas"
+		},
+		skills: {
+			sectionTitle: "Skills"
+		}
+	},
+	en: {
+		switchLabel: "CV language",
+		download: "Download PDF",
+		work: {
+			sectionTitle: "Work Experience",
+			view: "View",
+			current: "current",
+			technologies: "Technologies",
+			impact: "Challenges & Impact"
+		},
+		education: {
+			sectionTitle: "Education",
+			view: "View",
+			current: "current"
+		},
+		languages: {
+			sectionTitle: "Languages"
+		},
+		skills: {
+			sectionTitle: "Skills"
+		}
+	}
+}
+
+const versions = [
+	{ lang: "es", label: "ES", cv: cvEs, labels: labels.es },
+	{ lang: "en", label: "EN", cv: cvEn, labels: labels.en }
+]
 ---
 
 <Layout title="Luca Piccinini CV">
 	<main>
-		<Hero/>
-		<Experiencie/>
-		<Education/>
-		<Languages/>
-		<Skill/>
+		<div class="language-switch no-print" aria-label={labels.es.switchLabel}>
+			{
+				versions.map(({ lang, label }, index) => (
+					<button
+						type="button"
+						data-language-option={lang}
+						aria-pressed={index === 0 ? "true" : "false"}
+					>
+						{label}
+					</button>
+				))
+			}
+		</div>
+		{
+			versions.map(({ lang, cv, labels }, index) => (
+				<div data-language-panel={lang} hidden={index !== 0}>
+					<Hero basics={cv.basics}/>
+					<Experiencie work={cv.work} labels={labels.work}/>
+					<Education education={cv.education} labels={labels.education}/>
+					<Languages languages={cv.languages} labels={labels.languages}/>
+					<Skill skills={cv.skills} labels={labels.skills}/>
+				</div>
+			))
+		}
 		<div class="download-container no-print">
 			<button class="download" type="button" data-download-pdf>
 				<DownloadIcon width="1rem" height="1rem"/>
-				<span>Download PDF</span>
+				<span data-download-label>{labels.es.download}</span>
 			</button>
 		</div>
 	</main>
@@ -26,6 +99,45 @@ import DownloadIcon from "@/icons/DownloadIcon.astro"
 
 <script>
 	const downloadButton = document.querySelector("[data-download-pdf]");
+	const downloadLabel = document.querySelector("[data-download-label]");
+	const languageOptions = document.querySelectorAll("[data-language-option]");
+	const languagePanels = document.querySelectorAll("[data-language-panel]");
+	const languageLabels: Record<"es" | "en", string> = {
+		es: "Descargar PDF",
+		en: "Download PDF",
+	};
+
+	const setLanguage = (language: "es" | "en") => {
+		languageOptions.forEach((option) => {
+			const isActive = option.getAttribute("data-language-option") === language;
+			option.setAttribute("aria-pressed", String(isActive));
+		});
+
+		languagePanels.forEach((panel) => {
+			panel.toggleAttribute("hidden", panel.getAttribute("data-language-panel") !== language);
+		});
+
+		if (downloadLabel) {
+			downloadLabel.textContent = languageLabels[language];
+		}
+
+		document.documentElement.lang = language;
+		window.localStorage.setItem("cv-language", language);
+	};
+
+	const savedLanguage = window.localStorage.getItem("cv-language");
+	if (savedLanguage === "en" || savedLanguage === "es") {
+		setLanguage(savedLanguage);
+	}
+
+	languageOptions.forEach((option) => {
+		option.addEventListener("click", () => {
+			const language = option.getAttribute("data-language-option");
+			if (language === "en" || language === "es") {
+				setLanguage(language);
+			}
+		});
+	});
 
 	downloadButton?.addEventListener("click", () => {
 		window.print();
@@ -34,9 +146,47 @@ import DownloadIcon from "@/icons/DownloadIcon.astro"
 
 <style>
 	main {
-		padding: 5rem 20rem;
-		margin: auto;
-		width: 100%;
+		position: relative;
+		width: min(100%, 980px);
+		margin: 3rem auto;
+		padding: 3rem;
+		background: var(--color-surface);
+		border: 1px solid var(--color-border);
+		border-radius: 8px;
+		box-shadow: var(--shadow-sm);
+	}
+
+	.language-switch {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		display: inline-flex;
+		padding: .2rem;
+		border: 1px solid var(--color-border);
+		border-radius: 8px;
+		background: var(--color-surface-soft);
+	}
+
+	.language-switch button {
+		min-width: 2.25rem;
+		min-height: 1.8rem;
+		border: 0;
+		border-radius: 6px;
+		background: transparent;
+		color: var(--color-muted);
+		font: inherit;
+		font-size: .82rem;
+		font-weight: 800;
+		cursor: pointer;
+	}
+
+	.language-switch button[aria-pressed="true"] {
+		background: var(--color-text);
+		color: #fff;
+	}
+
+	[hidden] {
+		display: none !important;
 	}
 
 	.download-container {
@@ -51,36 +201,44 @@ import DownloadIcon from "@/icons/DownloadIcon.astro"
 		align-items: center;
 		gap: .35rem;
 		min-height: 2.25rem;
-		padding: .45rem .75rem;
-		border: 1px solid #222;
+		padding: .5rem .85rem;
+		border: 1px solid var(--color-border);
 		border-radius: 6px;
-		background: #fff;
-		color: #111;
+		background: var(--color-surface);
+		color: var(--color-text);
 		font: inherit;
+		font-weight: 700;
 		cursor: pointer;
+		transition: background .2s ease, border-color .2s ease, color .2s ease;
 	}
 
 	.download:hover,
 	.download:focus-visible {
-		background: #111;
+		border-color: var(--color-text);
+		background: var(--color-text);
 		color: #fff;
 	}
 
 	@media (width <= 1200px) {
 		main {
-			padding: 5rem 15rem;
+			width: calc(100% - 3rem);
+			margin: 1.5rem auto;
+			padding: 2.25rem;
 		}
 	}
 
 	@media (width <= 800px) {
 		main {
-			padding: 5rem 5rem;
+			width: 100%;
+			margin: 0;
+			padding: 1.25rem;
+			border: 0;
+			border-radius: 0;
 		}
-	}
 
-	@media (width <= 700px) {
-		main {
-			padding: 2rem;
+		.language-switch {
+			position: static;
+			margin-bottom: 1rem;
 		}
 	}
 
@@ -89,6 +247,12 @@ import DownloadIcon from "@/icons/DownloadIcon.astro"
 			width: 100%;
 			margin: 0;
 			padding: 0;
+			border: 0;
+			box-shadow: none;
+		}
+
+		.download-container {
+			display: none;
 		}
 	}
 </style>

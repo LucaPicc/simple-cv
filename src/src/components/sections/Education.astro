@@ -1,10 +1,37 @@
 ---
-import { education } from "@cv";
 import Section from "../Section.astro";
 import EducationIcon from "@/icons/EducationIcon.astro";
+
+type EducationItem = {
+    url: string
+    institution: string
+    startDate: string
+    endDate: string | null
+    area: string
+}
+
+type EducationLabels = {
+    sectionTitle: string
+    view: string
+    current: string
+}
+
+interface Props {
+    education: EducationItem[]
+    labels?: EducationLabels
+}
+
+const {
+    education,
+    labels = {
+        sectionTitle: "Education",
+        view: "View",
+        current: "current"
+    }
+} = Astro.props as Props;
 ---
 
-<Section title="Education">
+<Section title={labels.sectionTitle}>
     <ul>
         {
             education.map(({ url, institution, startDate, endDate, area }) => (
@@ -17,7 +44,7 @@ import EducationIcon from "@/icons/EducationIcon.astro";
                                     <h3>
                                         <a
                                             href={url}
-                                            title={`View ${institution}`}
+                                            title={`${labels.view} ${institution}`}
                                             target="_blank"
                                         >
                                             {institution}
@@ -32,7 +59,7 @@ import EducationIcon from "@/icons/EducationIcon.astro";
                                 </time>
                                 {" - "}
                                 <time datetime={endDate} data-title={endDate}>
-                                    {endDate || "current"}
+                                    {endDate || labels.current}
                                 </time>
                             </div>
                         </header>
@@ -44,15 +71,12 @@ import EducationIcon from "@/icons/EducationIcon.astro";
 </Section>
 <style>
     ul {
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 32px;
+        gap: 1rem;
         width: 100%;
-        margin-bottom: 20px;
-        /* width: 450px; */
     }
 
     article {
@@ -60,16 +84,20 @@ import EducationIcon from "@/icons/EducationIcon.astro";
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        padding: 1rem 1.15rem;
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        background: var(--color-surface);
     }
 
     article h3 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: #111;
+        font-size: 1.18rem;
+        font-weight: 800;
+        color: var(--color-text);
     }
 
     article a {
-        color: #111;
+        color: var(--color-text);
     }
 
     article a:hover {
@@ -77,18 +105,24 @@ import EducationIcon from "@/icons/EducationIcon.astro";
     }
 
     article h4 {
-        color: #222;
-        font-weight: 400;
+        color: var(--color-muted);
+        font-size: .94rem;
+        font-weight: 700;
     }
 
     header {
-        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        gap: 1rem;
     }
 
     time {
-        color: #555;
-        font-size: 0.85rem;
-        min-width: 102px;
+        color: var(--color-muted);
+        font-size: 0.84rem;
+        font-weight: 600;
+        white-space: nowrap;
         cursor: default;
     }
 
@@ -101,9 +135,36 @@ import EducationIcon from "@/icons/EducationIcon.astro";
         display: flex;
         flex-direction: row;
         align-items: center;
+        gap: .45rem;
     }
 
     .title h3 {
-        margin-left: .5rem;
+        margin-left: 0;
+    }
+
+    @media (width <= 1000px) {
+        header {
+            flex-direction: column;
+            gap: .35rem;
+        }
+    }
+
+    @media print {
+        article {
+            padding: .75rem .85rem;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background: var(--color-surface);
+            break-inside: auto;
+        }
+
+        article h3 {
+            font-size: 1rem;
+        }
+
+        article h4,
+        time {
+            font-size: .78rem;
+        }
     }
 </style>
