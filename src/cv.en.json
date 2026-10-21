@@ -29,12 +29,22 @@
     },
     "work": [
         {
+            "name": "COR",
+            "position": "Senior Software Engineer",
+            "url": "",
+            "startDate": "2026-08-01",
+            "endDate": null,
+            "summary": "Current role at COR.",
+            "technologies": [],
+            "highlights": []
+        },
+        {
             "name": "Ripio",
             "position": "Senior Software Engineer",
             "url": "https://ripio.com",
             "startDate": "2022-12-05",
-            "endDate": null,
-            "summary": "Design, development and evolution of fintech and crypto products using Python, Django, FastAPI, TypeScript, NestJS, React and React Native. I work on backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical business operations, including wallets, transactions, balances, limits, referrals and real-time communication.",
+            "endDate": "2026-08-01",
+            "summary": "Designed, developed and evolved fintech and crypto products using Python, Django, FastAPI, Node.js, TypeScript, NestJS, React and React Native. Built backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical operations, including wallets, transactions, balances, limits, referrals and real-time communication.",
             "technologies": [
                 "Python",
                 "Django",
