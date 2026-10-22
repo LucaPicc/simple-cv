@@ -6,7 +6,7 @@
         "email": "luca.piccinini0009@gmail.com",
         "phone": "+54 2317-517453",
         "url": "https://www.linkedin.com/in/lucapiccinini",
-        "summary": "Senior Software Engineer con más de 5 años de experiencia construyendo productos fintech, cripto y sistemas transaccionales de alta demanda. Especializado en Python, Django, FastAPI, TypeScript y NestJS, con foco en APIs escalables, microservicios, sistemas distribuidos y arquitecturas event-driven. Tengo experiencia tomando ownership de funcionalidades críticas de punta a punta: desde el análisis del problema y el diseño técnico hasta la implementación, puesta en producción, monitoreo y evolución posterior. Me interesa construir software limpio, mantenible y orientado a impacto real de negocio, priorizando soluciones simples, robustas y escalables. Trabajo habitualmente con AWS, RabbitMQ, Redis, PostgreSQL, MongoDB, Docker y Kubernetes. Además, desarrollo aplicaciones web y mobile con React y React Native, y uso herramientas de desarrollo asistido por IA como Claude Code y OpenAI Codex para acelerar debugging, refactors, generación de tests, investigación técnica y entrega de valor.",
+        "summary": "Senior Software Engineer con más de 5 años de experiencia diseñando y desarrollando soluciones backend y full-stack, principalmente en productos fintech y cripto. Experiencia en sistemas distribuidos, wallets, procesamiento de transacciones, centralización de balances, servicios en tiempo real y diseño de APIs. Trabajo con Python, Django, FastAPI, Node.js, TypeScript, React, PostgreSQL, MongoDB, Redis y AWS, priorizando soluciones confiables y mantenibles y la colaboración en decisiones técnicas. Integro Claude Code y OpenAI Codex con un enfoque adaptable de Spec-Driven Development (SDD) para apoyar la implementación, refactorización y las pruebas.",
         "location": {
             "address": "",
             "postalCode": "1900",
@@ -29,12 +29,47 @@
     },
     "work": [
         {
+            "name": "COR",
+            "position": "Software Developer",
+            "url": "",
+            "startDate": "2026-08-04",
+            "endDate": null,
+            "summary": "Diseño, desarrollo y mantenimiento de servicios backend y microfrontends en React. Participo en la definición técnica de requerimientos, decisiones de arquitectura, revisiones de código, testing, despliegues y resolución de incidentes.",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "JavaScript",
+                "AdonisJS",
+                "React",
+                "GraphQL",
+                "PostgreSQL",
+                "Redis",
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "GitHub Actions",
+                "Playwright",
+                "Sentry",
+                "Grafana",
+                "Claude Code"
+            ],
+            "highlights": [
+                "Participé en el desarrollo y mantenimiento del módulo Workspaces, actualmente en producción, sobre una implementación existente.",
+                "Estoy a cargo del diseño y desarrollo end-to-end del backend del módulo Positions, en etapas iniciales, para la gestión de posiciones, áreas y niveles de seniority.",
+                "Refactorizo funcionalidades legacy con Clean Architecture y Golden Master tests para preservar el comportamiento y las interfaces existentes; utilizo Laravel para la integración legacy y migraciones, AdonisJS para APIs REST y un BFF en JavaScript/GraphQL.",
+                "Participo en el diseño y mantenimiento de modelos PostgreSQL, migraciones, consultas y contratos GraphQL; utilizo Redis como caché.",
+                "Escribo tests unitarios y utilizo agentes de IA con Playwright para validar flujos end-to-end; participo en code reviews y despliegues a producción.",
+                "Trabajo sobre infraestructura existente en AWS, Docker, Kubernetes y GitHub Actions; utilizo Sentry y Grafana para investigar incidentes en producción.",
+                "Utilizo Claude Code y prácticas adaptables de Spec-Driven Development (SDD) en el desarrollo diario."
+            ]
+        },
+        {
             "name": "Ripio",
             "position": "Senior Software Engineer",
             "url": "https://ripio.com",
             "startDate": "2022-12-05",
-            "endDate": null,
-            "summary": "Diseño, desarrollo y evolución de productos fintech y cripto usando Python, Django, FastAPI, TypeScript, NestJS, React y React Native. Trabajo sobre servicios backend, sistemas distribuidos, arquitecturas event-driven y aplicaciones cloud-native que soportan operaciones críticas del negocio, incluyendo wallets, transacciones, balances, límites, referidos y comunicación en tiempo real.",
+            "endDate": "2026-08-01",
+            "summary": "Diseño, desarrollo y evolución de productos fintech y cripto usando Python, Django, FastAPI, Node.js, TypeScript, NestJS, React y React Native. Construí servicios backend, sistemas distribuidos, arquitecturas event-driven y aplicaciones cloud-native que soportan operaciones críticas, incluyendo wallets, transacciones, balances, límites, referidos y comunicación en tiempo real.",
             "technologies": [
                 "Python",
                 "Django",
@@ -221,20 +256,7 @@
             "courses": []
         }
     ],
-    "certificates": [
-        {
-            "name": "Learn React + Firebase",
-            "date": "2021-04-01",
-            "issuer": "Udemy",
-            "url": "https://www.udemy.com/certificate/UC-d4466584-71f4-4ac2-832c-1a837c5b6d41/"
-        },
-        {
-            "name": "Object-Oriented Programming with Java",
-            "date": "2019-10-03",
-            "issuer": "Udemy",
-            "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
-        }
-    ],
+    "certificates": [],
     "skills": [
         {
             "name": "Python",
@@ -551,7 +573,7 @@
         },
         {
             "language": "English",
-            "fluency": "Basic - Intermediate"
+            "fluency": "Intermedio (B1)"
         }
     ]
 }

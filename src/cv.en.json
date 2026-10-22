@@ -6,7 +6,7 @@
         "email": "luca.piccinini0009@gmail.com",
         "phone": "+54 2317-517453",
         "url": "https://www.linkedin.com/in/lucapiccinini",
-        "summary": "Senior Software Engineer with 5+ years of experience building fintech, crypto and high-demand transactional systems. Specialized in Python, Django, FastAPI, TypeScript and NestJS, focused on scalable APIs, microservices, distributed systems and event-driven architectures. Experienced taking ownership of critical features end to end, from problem analysis and technical design to implementation, production rollout, monitoring and evolution. I focus on building clean, maintainable software with real business impact, prioritizing simple, robust and scalable solutions. I regularly work with AWS, RabbitMQ, Redis, PostgreSQL, MongoDB, Docker and Kubernetes. I also build web and mobile applications with React and React Native, and use AI-assisted development tools such as Claude Code and OpenAI Codex to accelerate debugging, refactors, test generation, technical research and delivery.",
+        "summary": "Senior Software Engineer with 5+ years of experience designing and building backend and full-stack solutions, particularly for fintech and cryptocurrency products. Experienced in distributed systems, wallet operations, transaction processing, balance aggregation, real-time services, and API architecture. Work across Python, Django, FastAPI, Node.js, TypeScript, React, PostgreSQL, MongoDB, Redis, and AWS, with a focus on reliable, maintainable systems and collaborative technical decisions. Use Claude Code and OpenAI Codex with an adaptable Spec-Driven Development (SDD) approach to support implementation, refactoring, and testing.",
         "location": {
             "address": "",
             "postalCode": "1900",
@@ -29,12 +29,47 @@
     },
     "work": [
         {
+            "name": "COR",
+            "position": "Software Developer",
+            "url": "",
+            "startDate": "2026-08-04",
+            "endDate": null,
+            "summary": "Design, develop and maintain backend services and React microfrontends. Contribute to technical requirements, architecture discussions, code reviews, testing, production deployments, and incident resolution.",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "JavaScript",
+                "AdonisJS",
+                "React",
+                "GraphQL",
+                "PostgreSQL",
+                "Redis",
+                "AWS",
+                "Docker",
+                "Kubernetes",
+                "GitHub Actions",
+                "Playwright",
+                "Sentry",
+                "Grafana",
+                "Claude Code"
+            ],
+            "highlights": [
+                "Contributed to development and ongoing maintenance of the Workspaces module, currently in production, building on an existing implementation.",
+                "Own the end-to-end backend design and early development of the Positions module, covering positions, organizational areas, and seniority levels.",
+                "Refactor legacy functionality using Clean Architecture and Golden Master tests to preserve existing behavior and interfaces; use Laravel for legacy integration and migrations, AdonisJS for REST APIs, and a JavaScript/GraphQL BFF.",
+                "Design and maintain PostgreSQL schemas, database migrations, queries, and GraphQL contracts; use Redis for caching.",
+                "Write unit tests and use AI agents with Playwright for end-to-end validation; participate in peer code reviews and production deployments.",
+                "Work with existing AWS, Docker, Kubernetes, and GitHub Actions infrastructure; use Sentry and Grafana to investigate production issues.",
+                "Use Claude Code and adaptable Spec-Driven Development (SDD) practices in day-to-day engineering work."
+            ]
+        },
+        {
             "name": "Ripio",
             "position": "Senior Software Engineer",
             "url": "https://ripio.com",
             "startDate": "2022-12-05",
-            "endDate": null,
-            "summary": "Design, development and evolution of fintech and crypto products using Python, Django, FastAPI, TypeScript, NestJS, React and React Native. I work on backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical business operations, including wallets, transactions, balances, limits, referrals and real-time communication.",
+            "endDate": "2026-08-01",
+            "summary": "Designed, developed and evolved fintech and crypto products using Python, Django, FastAPI, Node.js, TypeScript, NestJS, React and React Native. Built backend services, distributed systems, event-driven architectures and cloud-native applications supporting critical operations, including wallets, transactions, balances, limits, referrals and real-time communication.",
             "technologies": [
                 "Python",
                 "Django",
@@ -221,20 +256,7 @@
             "courses": []
         }
     ],
-    "certificates": [
-        {
-            "name": "Learn React + Firebase",
-            "date": "2021-04-01",
-            "issuer": "Udemy",
-            "url": "https://www.udemy.com/certificate/UC-d4466584-71f4-4ac2-832c-1a837c5b6d41/"
-        },
-        {
-            "name": "Object-Oriented Programming with Java",
-            "date": "2019-10-03",
-            "issuer": "Udemy",
-            "url": "https://www.udemy.com/certificate/UC-IC8T6I2E/"
-        }
-    ],
+    "certificates": [],
     "skills": [
         {
             "name": "Python",
@@ -551,7 +573,7 @@
         },
         {
             "language": "English",
-            "fluency": "Basic - Intermediate"
+            "fluency": "Intermediate (B1)"
         }
     ]
 }
